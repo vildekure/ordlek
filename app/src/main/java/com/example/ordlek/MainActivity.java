@@ -6,20 +6,19 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     EditText text;
     String word = "";
     // TextView tooShort;
 
-    String [] wordArray;
-    String [] newArrayList;
-    List newWordList = Arrays.asList(newArrayList);
+    String [] fasitArray;
+    ArrayList<String> fasitListe = new ArrayList<>();
+
+    ArrayList<String> ordListe = new ArrayList<>();
 
 
     @Override
@@ -27,9 +26,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        wordArray = getResources().getStringArray(R.array.ord);
-        ArrayList<String> wordList = new ArrayList<>();
-        wordList.addAll(Arrays.asList(wordArray));
+        fasitArray = getResources().getStringArray(R.array.ord);
+        fasitListe.addAll(Arrays.asList(fasitArray));
 
         text = (EditText) findViewById(R.id.editText);
         // tooShort = (TextView) findViewById(R.id.error);
@@ -82,11 +80,11 @@ public class MainActivity extends AppCompatActivity {
                 else {
 
                     }
-            */
+
                 if (word.length() < 3) {
 
                 }
-
+*/
 
             }
         });
