@@ -6,14 +6,16 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
     EditText text;
+    TextView error;
     String word = "";
-    // TextView tooShort;
+    String feilMeldKort, feilMeldMain, mainLetter, feilOrd, riktig;
 
     String [] fasitArray;
     ArrayList<String> fasitListe = new ArrayList<>();
@@ -30,7 +32,12 @@ public class MainActivity extends AppCompatActivity {
         fasitListe.addAll(Arrays.asList(fasitArray));
 
         text = (EditText) findViewById(R.id.editText);
-        // tooShort = (TextView) findViewById(R.id.error);
+        error = (TextView) findViewById(R.id.error);
+        mainLetter = getResources().getString(R.string.buttonMain);
+        riktig = getResources().getString(R.string.riktig);
+        feilMeldKort = getResources().getString(R.string.feilMeldKort);
+        feilMeldMain = getResources().getString(R.string.feilMeldMain);
+        feilOrd = getResources().getString(R.string.feilOrd);
 
         Button buttonMain = (Button) findViewById(R.id.buttonMain);
         Button button1 = (Button) findViewById(R.id.button1);
@@ -39,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         Button button4 = (Button) findViewById(R.id.button4);
         Button button5 = (Button) findViewById(R.id.button5);
         Button button6 = (Button) findViewById(R.id.button6);
-
         Button buttonCheck = (Button) findViewById(R.id.buttonCheck);
         Button buttonDelete = (Button) findViewById(R.id.buttonDelete);
 
@@ -48,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             word += button.getText().toString();
             text.setText(word);
         };
+
         buttonMain.setOnClickListener(buttonClick);
         button1.setOnClickListener(buttonClick);
         button2.setOnClickListener(buttonClick);
@@ -65,27 +72,21 @@ public class MainActivity extends AppCompatActivity {
                 sjekk om ord inneholder Main
                 sjekk om ordet eksisterer i Array
                 Legg ord i nytt array
+                */
 
-
-                if (word.length() >= 4 && word.contains(buttonMain)){
-                    for(int i = 0; i < wordList.size(); i++) {
-                        if (newWordList.contains(word)) {
-                            newWordList.add(word);
-                        }
-                        else {
-
-                        }
-                    }
+                if (word.length() < 4) {
+                    error.setText(feilMeldKort);
+                }
+                else if (!word.contains(mainLetter)) {
+                    error.setText(feilMeldMain);
+                }
+                else if (!fasitListe.contains(word)) {
+                    error.setText(feilOrd);
                 }
                 else {
-
-                    }
-
-                if (word.length() < 3) {
-
+                    // ordListe.add(word);
+                    error.setText(riktig);
                 }
-*/
-
             }
         });
 
