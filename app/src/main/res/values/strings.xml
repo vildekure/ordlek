@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ordlek</string>
+    <string name="overskrift">Lag ord</string>
+    <string name="buttonMain">T</string>
+    <string name="button1">Ø</string>
+    <string name="button2">S</string>
+    <string name="button3">Å</string>
+    <string name="button4">Y</string>
+    <string name="button5">F</string>
+    <string name="button6">G</string>
+    <string name="buttonDelete">Slett</string>
+    <string name="buttonCheck">Sjekk</string>
+    <string name="tooShort">Ordet er for kort</string>
+</resources>

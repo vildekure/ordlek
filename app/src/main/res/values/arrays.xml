@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ord">
+        <item>"TØYT"</item> //eksempel
+        <item>"TØYST"</item>
+        <item>"TØYS"</item>
+        <item>"TÅTT"</item>
+    </string-array>
+</resources>
