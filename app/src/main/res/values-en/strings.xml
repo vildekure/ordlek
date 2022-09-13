@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wordgame</string>
+    <string name="overskrift">Make a word</string>
+    <string name="buttonMain">S</string>
+    <string name="button1">E</string>
+    <string name="button2">T</string>
+    <string name="button3">A</string>
+    <string name="button4">I</string>
+    <string name="button5">K</string>
+    <string name="button6">R</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="buttonCheck">Check</string>
+    <string name="feilMeldKort">Too Short</string>
+    <string name="feilMeldMain">Must contain middle letter</string>
+    <string name="feilOrd">Not a valid word</string>
+    <string name="riktig">Correct!</string>
+</resources>
