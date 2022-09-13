@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ord">
+        <item>"ARISE"</item>
+        <item>"TASKS"</item>
+        <item>"TAKES"</item>
+        <item>"STEAK"</item>
+        <item>"SKATE"</item>
+        <item>"SATIRES"</item>
+        <item>"EATS"</item>
+        <item>"EARS"</item>
+        <item>"ARKS"</item>
+        <item>"SAKE"</item>
+        <item>"ASKERS"</item>
+        <item>"SKIRTS"</item>
+        <item>"EAST"</item>
+        <item>"SKIT"</item>
+        <item>"KISS"</item>
+    </string-array>
+</resources>
