@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Ordlek</string>
     <string name="overskrift">Lag ord</string>
-    <string name="buttonMain">T</string>
-    <string name="button1">Ø</string>
-    <string name="button2">S</string>
-    <string name="button3">Å</string>
+    <string name="buttonMain">K</string>
+    <string name="button1">R</string>
+    <string name="button2">D</string>
+    <string name="button3">V</string>
     <string name="button4">Y</string>
-    <string name="button5">F</string>
-    <string name="button6">G</string>
+    <string name="button5">O</string>
+    <string name="button6">U</string>
     <string name="buttonDelete">Slett</string>
     <string name="buttonCheck">Sjekk</string>
     <string name="feilMeldKort">Ordet er for kort</string>

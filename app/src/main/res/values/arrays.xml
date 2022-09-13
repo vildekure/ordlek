@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="ord">
-        <item>"TØYT"</item> //eksempel
-        <item>"TØYST"</item>
-        <item>"TØYS"</item>
-        <item>"TÅTT"</item>
+        <item>"VOKK"</item>
+        <item>"RYKK"</item>
+        <item>"ROKOKKO"</item>
+        <item>"ROKK"</item>
+        <item>"KURV"</item>
+        <item>"KRYR"</item>
+        <item>"KROK"</item>
+        <item>"KORK"</item>
+        <item>"KOKK"</item>
+        <item>"DYRK"</item>
+        <item>"DYKK"</item>
+        <item>"DUKK"</item>
+        <item>"DOKK"</item>
+        <item>"KORD"</item>
+        <item>"VYRK"</item>
     </string-array>
 </resources>
