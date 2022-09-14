@@ -127,6 +127,9 @@
                         style="@style/checkV"
                         android:text="@string/buttonCheck" />
                 </LinearLayout>
+
+                <!-- plass til hint og hvor mange ord som er igjen ?? -->
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

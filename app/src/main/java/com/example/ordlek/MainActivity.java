@@ -101,6 +101,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /*
+        Trenger en funksjon som sier hint.
+        En funksjon som sier hvor mange ord man har/mangler
+        */
+
+        /*
         en onClick for å sendes til fasit
          */
     }
