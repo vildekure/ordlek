@@ -18,4 +18,5 @@
     <string name="feilOrd">Not a valid word</string>
     <string name="riktig">Correct!</string>
     <string name="found">Found</string>
+    <string name="back">Back</string>
 </resources>

@@ -11,44 +11,53 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
+        <Button
+            android:id="@+id/back"
+            android:text="@string/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="400dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-                <TextView
-                style="@style/text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/found"></TextView>
-                <TextView
-                android:id="@+id/found"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></TextView>
-            </LinearLayout>
-<!--
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
                 <TextView
+                    style="@style/text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/answ"
-                    style="@style/text"></TextView>
+                    android:text="@string/found"></TextView>
 
-                <ListView
-                    android:id="@+id/fasit"
+                <TextView
+                    android:id="@+id/found"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></ListView>
+                    android:layout_height="wrap_content"></TextView>
             </LinearLayout>
-            -->
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/answ"
+                                style="@style/text"></TextView>
+
+                            <ListView
+                                android:id="@+id/fasit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></ListView>
+                        </LinearLayout>
+                        -->
         </LinearLayout>
 
     </LinearLayout>

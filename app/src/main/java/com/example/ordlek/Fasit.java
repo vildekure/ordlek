@@ -1,6 +1,9 @@
 package com.example.ordlek;
+
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -11,16 +14,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Fasit extends AppCompatActivity {
-
+    // Button buttonBack = (Button) findViewById(R.id.back);
     TextView fasit, found;
 
-    String [] fasitArray;
+    String[] fasitArray;
     ArrayList<String> fasitListe = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fasit);
+
+        /* buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        }); */
 
         /* fasit = findViewById(R.id.fasit);
         fasitArray = getResources().getStringArray(R.array.ord);
