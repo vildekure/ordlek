@@ -1,15 +1,12 @@
 package com.example.ordlek;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
-
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -18,6 +15,7 @@ public class Fasit extends AppCompatActivity {
 
     String[] fasitArray;
     ArrayList<String> fasitListe = new ArrayList<>();
+    ArrayList<String> ordListe = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,10 +39,9 @@ public class Fasit extends AppCompatActivity {
         fasit.setAdapter(listeFasitAdapter);
 
         found = findViewById(R.id.found);
-        ArrayList<String> ordliste = (ArrayList<String>) getIntent().getSerializableExtra("ordliste");
-        // found.setText(String.valueOf(ordliste));
+        ordListe = (ArrayList<String>) getIntent().getSerializableExtra("ordliste");
         ArrayAdapter<String> listeFunnetAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, ordliste);
+                android.R.layout.simple_list_item_1, ordListe);
         found.setAdapter(listeFunnetAdapter);
 
     }

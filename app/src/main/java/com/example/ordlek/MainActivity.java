@@ -26,16 +26,27 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> ordListe = new ArrayList<>();
 
     @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        error = (TextView) findViewById(R.id.error);
-        error.setText(savedInstanceState.getString("error"));
-    }
-    @Override
     protected void onSaveInstanceState(Bundle outstate) {
         super.onSaveInstanceState(outstate);
         error = (TextView) findViewById(R.id.error);
+        teller = (TextView) findViewById(R.id.teller);
+
+        outstate.putInt("tellerInt", tellerInt);
+        outstate.putString("teller", teller.getText().toString());
         outstate.putString("error", error.getText().toString());
+        outstate.putStringArrayList("ordListe", ordListe);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        error = (TextView) findViewById(R.id.error);
+        teller = (TextView) findViewById(R.id.teller);
+
+        tellerInt = savedInstanceState.getInt("tellerInt");
+        teller.setText(savedInstanceState.getString("teller"));
+        error.setText(savedInstanceState.getString("error"));
+        ordListe.addAll(savedInstanceState.getStringArrayList("ordListe"));
     }
 
     @Override
@@ -45,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
         fasitArray = getResources().getStringArray(R.array.ord);
         fasitListe.addAll(Arrays.asList(fasitArray));
-
         text = (EditText) findViewById(R.id.editText);
         error = (TextView) findViewById(R.id.error);
         teller = (TextView) findViewById(R.id.teller);
