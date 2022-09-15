@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // en onClick for å sendes til fasit
                 Intent fasitAktivitet = new Intent(MainActivity.this, Fasit.class);
+                getIntent().putExtra("ordliste", ordListe);
                 startActivity(fasitAktivitet);
             }
         });
