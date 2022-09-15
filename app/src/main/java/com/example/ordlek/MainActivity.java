@@ -14,9 +14,10 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
     EditText text;
-    TextView error;
+    TextView error, teller;
     String word = "";
     String feilMeldKort, feilMeldMain, mainLetter, feilOrd, riktig;
+    int tellerInt = 0;
 
     String [] fasitArray;
     ArrayList<String> fasitListe = new ArrayList<>();
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         text = (EditText) findViewById(R.id.editText);
         error = (TextView) findViewById(R.id.error);
+        teller = (TextView) findViewById(R.id.teller);
+        teller.setText("0/15");
         mainLetter = getResources().getString(R.string.buttonMain);
         riktig = getResources().getString(R.string.riktig);
         feilMeldKort = getResources().getString(R.string.feilMeldKort);
@@ -94,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
                     error.setText(riktig);
                     text.setText("");
                     word = "";
+                    tellerInt++;
+                    teller.setText(tellerInt + "/15");
                 }
 
             }
@@ -126,10 +131,6 @@ public class MainActivity extends AppCompatActivity {
                 error.setText(hint + "...");
             }
         });
-
-        /*
-        En funksjon som sier hvor mange ord man har/mangler
-        */
 
         buttonFasit.setOnClickListener(new View.OnClickListener() {
             @Override
