@@ -25,23 +25,37 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/overskrift"
-                    android:textSize="20sp" />
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/overskrift"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/howManyLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:textSize="20dp"
+                        android:text="Hei"/>
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/editText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
 
                 <TextView
                     android:id="@+id/error"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"/>
+                    android:gravity="center" />
             </LinearLayout>
 
             <LinearLayout
@@ -101,43 +115,42 @@
                     android:text="@string/button6" />
             </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/buttonDelete"
-                        style="@style/knapp"
-                        android:text="@string/buttonDelete" />
+                <Button
+                    android:id="@+id/buttonDelete"
+                    style="@style/knapp"
+                    android:text="@string/buttonDelete" />
 
-                    <Button
-                        android:id="@+id/buttonCheck"
-                        style="@style/knapp"
-                        android:text="@string/buttonCheck" />
-                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonCheck"
+                    style="@style/knapp"
+                    android:text="@string/buttonCheck" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/buttonHint"
-                    android:text="@string/buttonHint"
-                    style="@style/knapp">
-                </Button>
+                    style="@style/knapp"
+                    android:text="@string/buttonHint"></Button>
+
                 <Button
                     android:id="@+id/buttonFasit"
-                    android:text="@string/answ"
-                    style="@style/knapp">
-                </Button>
+                    style="@style/knapp"
+                    android:text="@string/answ"></Button>
             </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+        </LinearLayout>
+    </ScrollView>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

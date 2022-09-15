@@ -93,13 +93,24 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/textView"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/overskrift"
-                        android:textSize="20sp" />
+                        android:layout_height="wrap_content">
 
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/overskrift"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/howManyLeft"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textSize="20sp"
+                            android:text="Hei"/>
+                    </LinearLayout>
                     <EditText
                         android:id="@+id/editText"
                         android:layout_width="match_parent"
@@ -127,9 +138,23 @@
                         style="@style/checkV"
                         android:text="@string/buttonCheck" />
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
 
-                <!-- plass til hint og hvor mange ord som er igjen ?? -->
-
+                    <Button
+                        android:id="@+id/buttonHint"
+                        android:text="@string/buttonHint"
+                        style="@style/checkV">
+                    </Button>
+                    <Button
+                        android:id="@+id/buttonFasit"
+                        android:text="@string/answ"
+                        style="@style/checkV">
+                    </Button>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
