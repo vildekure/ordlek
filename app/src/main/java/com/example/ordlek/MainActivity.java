@@ -113,13 +113,15 @@ public class MainActivity extends AppCompatActivity {
                 // hint knapp
                 error.setText("Her er hint");
                 String fasit = "";
+                String hint = "";
                 for (int i=0;i<fasitListe.size();i++) {
-                    if (!ordListe.contains(word)){
+                    if (!ordListe.contains(fasitListe.get(i))){
                         fasit = fasitListe.get(i);
                         break;
                     }
                 }
-                error.setText(fasit);
+                hint = fasit.substring(0, 2);
+                error.setText(hint + "...");
             }
         });
 
