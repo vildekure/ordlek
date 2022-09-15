@@ -104,12 +104,11 @@
                             android:text="@string/overskrift"
                             android:textSize="20sp" />
                         <TextView
-                            android:id="@+id/howManyLeft"
+                            android:id="@+id/teller"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="end"
-                            android:textSize="20sp"
-                            android:text="Hei"/>
+                            android:textSize="20sp" />
                     </LinearLayout>
                     <EditText
                         android:id="@+id/editText"

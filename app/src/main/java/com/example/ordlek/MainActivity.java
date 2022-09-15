@@ -1,5 +1,6 @@
 package com.example.ordlek;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -24,6 +25,18 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList<String> ordListe = new ArrayList<>();
 
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        error = (TextView) findViewById(R.id.error);
+        error.setText(savedInstanceState.getString("error"));
+    }
+    @Override
+    protected void onSaveInstanceState(Bundle outstate) {
+        super.onSaveInstanceState(outstate);
+        error = (TextView) findViewById(R.id.error);
+        outstate.putString("error", error.getText().toString());
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
