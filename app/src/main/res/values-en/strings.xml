@@ -11,6 +11,8 @@
     <string name="button6">R</string>
     <string name="buttonDelete">Delete</string>
     <string name="buttonCheck">Check</string>
+    <string name="buttonHint">Hint</string>
+    <string name="buttonAnsw">Answers</string>
     <string name="feilMeldKort">Too Short</string>
     <string name="feilMeldMain">Must contain middle letter</string>
     <string name="feilOrd">Not a valid word</string>

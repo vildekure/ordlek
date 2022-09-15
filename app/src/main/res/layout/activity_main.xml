@@ -40,7 +40,8 @@
                 <TextView
                     android:id="@+id/error"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
@@ -100,28 +101,43 @@
                     android:text="@string/button6" />
             </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonDelete"
+                        style="@style/knapp"
+                        android:text="@string/buttonDelete" />
+
+                    <Button
+                        android:id="@+id/buttonCheck"
+                        style="@style/knapp"
+                        android:text="@string/buttonCheck" />
+                </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <Button
-                    android:id="@+id/buttonDelete"
-                    style="@style/knapp"
-                    android:text="@string/buttonDelete" />
-
+                    android:id="@+id/buttonHint"
+                    android:text="@string/buttonHint"
+                    style="@style/knapp">
+                </Button>
                 <Button
-                    android:id="@+id/buttonCheck"
-                    style="@style/knapp"
-                    android:text="@string/buttonCheck" />
+                    android:id="@+id/buttonFasit"
+                    android:text="@string/buttonAnsw"
+                    style="@style/knapp">
+                </Button>
             </LinearLayout>
-
-            <!-- plass til hint og hvor mange ord som er igjen ?? -->
-
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+</ScrollView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

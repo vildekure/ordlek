@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         Button button6 = (Button) findViewById(R.id.button6);
         Button buttonCheck = (Button) findViewById(R.id.buttonCheck);
         Button buttonDelete = (Button) findViewById(R.id.buttonDelete);
+        Button buttonHint = (Button) findViewById(R.id.buttonHint);
 
         View.OnClickListener buttonClick = (view) -> {
             Button button = (Button) view;
@@ -83,10 +84,16 @@ public class MainActivity extends AppCompatActivity {
                 else if (!fasitListe.contains(word)) {
                     error.setText(feilOrd);
                 }
-                else {
-                    // ordListe.add(word);
-                    error.setText(riktig);
+                else if (ordListe.contains(word)) {
+                    error.setText("Allerede gjort"); //må lage i string.xml
                 }
+                else {
+                    ordListe.add(word);
+                    error.setText(riktig);
+                    text.setText("");
+                    word = "";
+                }
+
             }
         });
 
@@ -100,8 +107,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonHint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // hint knapp
+                error.setText("Her er hint");
+                String fasit = "";
+                for (int i=0;i<fasitListe.size();i++) {
+                    if (!ordListe.contains(word)){
+                        fasit = fasitListe.get(i);
+                        break;
+                    }
+                }
+                error.setText(fasit);
+            }
+        });
+
         /*
-        Trenger en funksjon som sier hint.
         En funksjon som sier hvor mange ord man har/mangler
         */
 

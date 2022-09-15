@@ -10,6 +10,8 @@
     <string name="button6">U</string>
     <string name="buttonDelete">Slett</string>
     <string name="buttonCheck">Sjekk</string>
+    <string name="buttonHint">Hint</string>
+    <string name="buttonAnsw">Fasit</string>
     <string name="feilMeldKort">Ordet er for kort</string>
     <string name="feilMeldMain">Må inneholde bokstav i midten</string>
     <string name="feilOrd">Ikke gyldig ord</string>
