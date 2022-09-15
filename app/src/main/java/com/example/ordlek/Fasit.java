@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Fasit extends AppCompatActivity {
-    // Button buttonBack = (Button) findViewById(R.id.back);
     TextView fasit, found;
 
     String[] fasitArray;
@@ -25,12 +24,14 @@ public class Fasit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fasit);
 
-        /* buttonBack.setOnClickListener(new View.OnClickListener() {
+        Button buttonBack = (Button) findViewById(R.id.back);
+
+        buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
-        }); */
+        });
 
         /* fasit = findViewById(R.id.fasit);
         fasitArray = getResources().getStringArray(R.array.ord);
