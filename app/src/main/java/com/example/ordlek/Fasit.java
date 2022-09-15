@@ -33,12 +33,12 @@ public class Fasit extends AppCompatActivity {
             }
         });
 
-        /* fasit = findViewById(R.id.fasit);
+        fasit = findViewById(R.id.fasit);
         fasitArray = getResources().getStringArray(R.array.ord);
         fasitListe.addAll(Arrays.asList(fasitArray));
         ArrayAdapter<String> listeFasitAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, fasitListe);
-        fasit.setAdapter(listeFasitAdapter); */
+        fasit.setAdapter(listeFasitAdapter);
 
         found = findViewById(R.id.found);
         ArrayList<String> ordliste = (ArrayList<String>) getIntent().getSerializableExtra("ordliste");
