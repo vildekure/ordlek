@@ -11,9 +11,10 @@
     <string name="buttonDelete">Slett</string>
     <string name="buttonCheck">Sjekk</string>
     <string name="buttonHint">Hint</string>
-    <string name="buttonAnsw">Fasit</string>
+    <string name="answ">Fasit</string>
     <string name="feilMeldKort">Ordet er for kort</string>
     <string name="feilMeldMain">Må inneholde bokstav i midten</string>
     <string name="feilOrd">Ikke gyldig ord</string>
     <string name="riktig">Riktig!</string>
+    <string name="found">Funnet</string>
 </resources>

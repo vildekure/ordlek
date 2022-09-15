@@ -2,6 +2,7 @@ package com.example.ordlek;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonCheck = (Button) findViewById(R.id.buttonCheck);
         Button buttonDelete = (Button) findViewById(R.id.buttonDelete);
         Button buttonHint = (Button) findViewById(R.id.buttonHint);
+        Button buttonFasit = (Button) findViewById(R.id.buttonFasit);
 
         View.OnClickListener buttonClick = (view) -> {
             Button button = (Button) view;
@@ -129,8 +131,15 @@ public class MainActivity extends AppCompatActivity {
         En funksjon som sier hvor mange ord man har/mangler
         */
 
-        /*
-        en onClick for å sendes til fasit
-         */
+        buttonFasit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // en onClick for å sendes til fasit
+                Intent fasitAktivitet = new Intent(MainActivity.this, Fasit.class);
+                startActivity(fasitAktivitet);
+            }
+        });
+
+
     }
 }

@@ -132,7 +132,7 @@
                 </Button>
                 <Button
                     android:id="@+id/buttonFasit"
-                    android:text="@string/buttonAnsw"
+                    android:text="@string/answ"
                     style="@style/knapp">
                 </Button>
             </LinearLayout>
