@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Fasit extends AppCompatActivity {
-    TextView fasit, found;
+    ListView fasit, found;
 
     String[] fasitArray;
     ArrayList<String> fasitListe = new ArrayList<>();
@@ -42,10 +42,10 @@ public class Fasit extends AppCompatActivity {
 
         found = findViewById(R.id.found);
         ArrayList<String> ordliste = (ArrayList<String>) getIntent().getSerializableExtra("ordliste");
-        found.setText(String.valueOf(ordliste));
-        /* ArrayAdapter<String> listeFunnetAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, fasitListe);
-        found.setAdapter(listeFunnetAdapter); */
+        // found.setText(String.valueOf(ordliste));
+        ArrayAdapter<String> listeFunnetAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, ordliste);
+        found.setAdapter(listeFunnetAdapter);
 
     }
 }
